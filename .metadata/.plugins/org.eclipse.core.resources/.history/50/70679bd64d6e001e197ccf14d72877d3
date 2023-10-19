@@ -1,0 +1,37 @@
+package com.Codevandana;
+import java.util.HashSet;
+
+public class PangramChecker {
+    public static void main(String[] args) {
+        String input = "The quick brown fox jumps over t";
+        boolean isPangram = isPangram(input);
+        
+        if (isPangram) {
+            System.out.println("The input is a pangram.");
+        } else {
+            System.out.println("The input is not a pangram.");
+        }
+    }
+    
+    public static boolean isPangram(String str) {
+        // Remove spaces and convert to lowercase to simplify checking
+        str = str.replaceAll(" ", "").toLowerCase();
+        
+        // Create a set to store unique characters
+       // HashSet<Character> charSet = new HashSet<>();
+        int count=0;
+        
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            
+            // Check if the character is an alphabet letter
+            if (ch >= 'a' && ch <= 'z') {
+               // charSet.add(ch);
+            	count++;
+            }
+        }
+        
+        // Check if the size of the set is 26, which would mean all letters are present
+        return count == 26;
+    }
+}

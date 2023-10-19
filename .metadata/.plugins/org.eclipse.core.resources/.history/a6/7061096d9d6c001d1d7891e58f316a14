@@ -1,0 +1,152 @@
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.*;
+
+public class Travefinal extends Exception {
+	Travefinal(){
+		
+	}
+
+
+	
+
+
+
+
+
+	Travefinal(String name){
+		super(name);
+	}
+	static Scanner sc=new Scanner(System.in);
+	static String loginstatus="false";
+	
+	static  Map<String,TRAVEOBJECT> travelsobj=new HashMap();
+	
+	
+		
+	
+
+	public static void main(String[] args) throws IOException, Travefinal {
+		
+		
+		y2();
+	   drivermethod();
+	   
+		 
+		  
+		
+		
+		
+		
+		 
+		
+		
+		
+
+  
+	
+	}
+
+
+
+
+
+
+
+
+	private static void drivermethod() throws FileNotFoundException, IOException {
+		File f=new File("C:\\Users\\naray\\OneDrive\\Documents\\nani_files\\nani.txt");
+			if(f.exists()) {
+			  FileInputStream fs=new FileInputStream(f);
+			  int temp;
+			  while((temp=fs.read())!=-1) {
+			  System.out.print((char) temp);
+				  
+			  
+
+				}
+			}
+			 if(f.exists()) {
+				
+			  
+		
+			
+			// TODO Auto-generated method stub
+		    int numbers=1;
+			 while(numbers>0) {
+			   
+			  System.out.println("selectoptions:"
+			           +'\r'+"1.login"
+			           +'\r'+"2.lock account"
+			           +'\r'+"3.travel plan"
+			           +'\r'+"4.travel days"
+			           +'\r'+"5.booking confirmation"
+			           +'r'+"6.edit travel user");
+			            
+			 
+				
+			
+			
+			
+			
+			Travelmethods s=new Travelmethods();
+			System.out.println("enter your option");
+			int number=sc.nextInt();
+			switch(number){
+			case 1:
+				s.login();
+				break;
+			case 2:
+				s.newuserregistration();
+				break;
+			case 3:
+				s.Travelplan();
+				break;
+			case 4:
+				s.Traveldays();
+				break;
+			case 5:
+				s.bookingconfirmation();
+				break;
+			case 6:
+				s.useredit();
+				break;
+			default :
+				System.out.println("please choose correct option");
+			    numbers++;
+			}
+			 }
+			}
+			 else {
+				  try {
+				  throw new Travefinal("file is missing");
+				  }
+				  catch(Exception e) {
+					 System.out.println("file is missing");
+				  }
+			  }
+	}
+
+
+
+
+
+
+
+
+	private static void y2() {
+		TRAVEOBJECT T1=new TRAVEOBJECT("narayana","murthy",99895463,"male","nani123");
+		TRAVEOBJECT T2=new TRAVEOBJECT("ganesh","punnam",95424556,"male","ganesh123");
+		TRAVEOBJECT T3=new TRAVEOBJECT("muneendra","medicharla",98496075,"male","munendra123");
+		TRAVEOBJECT T4=new TRAVEOBJECT("swathi","akula",99898760,"female","swathi123");
+		TRAVEOBJECT T5=new TRAVEOBJECT("kalyan","cheruku",99895356,"male","nani123");
+		
+		travelsobj.put("narayanamurthy55@gmail.com", T1);
+		travelsobj.put("ganesh123@gmail.com", T2);
+		travelsobj.put("muneendra123@gmail.com", T3);
+		travelsobj.put("swathi123@gmail.com", T4);
+		travelsobj.put("kalyan123@gmail.com", T5);
+	}}
+

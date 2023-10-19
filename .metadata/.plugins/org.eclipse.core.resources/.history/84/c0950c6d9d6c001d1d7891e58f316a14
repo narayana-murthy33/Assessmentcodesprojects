@@ -1,0 +1,105 @@
+import java.sql.*;
+import java.util.*;
+public class Travelmethods  {
+	static int failedcount;
+	
+		public static void main(String[] args) {
+			Travelmethods s=new Travelmethods();
+			//s.newuserregistration();
+			//s.login();
+		}
+		// TODO Auto-generated constructor stub
+	
+	
+	
+	static Scanner sc=new Scanner(System.in);
+	void newuserregistration() {
+		try {
+			Connection con=JDBCDEMO1.getDBconnection();
+		System.out.println("enter id");
+		int id=sc.nextInt();
+		System.out.println("please enter your firstname");
+		String firstname=sc.next();
+		System.out.println("please enter your lastname");
+	    String lastname=sc.next();
+		System.out.println("please enter your mobile number");
+		String mobilenumber=sc.next();
+		System.out.println("please enter your gender");
+		String gender=sc.next();
+		System.out.println("please enter your password");
+		String password=sc.next();
+		System.out.println("please enter your email");
+		String email=sc.next();
+		PreparedStatement pst=con.prepareStatement("insert into userpasvalid values(?,?,?,?,?,?,?,?)");
+		pst.setInt(1,id);
+		pst.setString(2,email);
+		pst.setString(3, password);
+		pst.setString(4, firstname);
+		pst.setString(5, lastname);
+		pst.setString(6, gender);
+		pst.setString(7, mobilenumber);
+		pst.setString(8, email);
+		int result=pst.executeUpdate();
+		System.out.println(result);
+	}catch (SQLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+		
+		
+		
+	}
+	void login() {
+		System.out.println("please enter your username");
+		String username=sc.next();
+		System.out.println("please enter your password");
+		String password=sc.next();
+		try {
+			Connection con=JDBCDEMO1.getDBconnection();
+			PreparedStatement pst=con.prepareStatement("select count(*) from userpasvalid where username=? and password=?");
+			pst.setString(1, username);
+			pst.setString(2, password);
+			ResultSet rs=pst.executeQuery();
+			System.out.println('A');
+			rs.next();
+			int res=rs.getInt(1);
+			if(res>0) {
+				System.out.println("user is valid");
+			}
+			else {
+				System.out.println("user is not valid");
+				failedcount++;
+				if(failedcount>=5) {
+					System.out.println("account is blocked");
+				}}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+			
+		
+		
+		
+		
+		
+		
+		
+	}
+	void Travelplan() {
+		System.out.println("nani");
+		
+	}
+	void Traveldays() {
+		System.out.println("siva");
+		
+	}
+	void bookingconfirmation() {
+		System.out.println("bannu");
+		
+	}
+	void useredit() {
+		
+	}
+
+}

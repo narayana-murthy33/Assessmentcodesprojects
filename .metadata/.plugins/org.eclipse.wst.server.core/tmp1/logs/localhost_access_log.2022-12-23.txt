@@ -1,0 +1,5 @@
+127.0.0.1 - - [23/Dec/2022:20:20:33 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [23/Dec/2022:20:20:34 +0530] "GET /NoXMLwebapplication/ HTTP/1.1" 200 301
+0:0:0:0:0:0:0:1 - - [23/Dec/2022:20:20:34 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [23/Dec/2022:20:20:41 +0530] "GET /NoXMLwebapplication/yathra/signup HTTP/1.1" 200 1269
+0:0:0:0:0:0:0:1 - - [23/Dec/2022:20:21:02 +0530] "GET /NoXMLwebapplication/yathra/create-user?email=.&password=.&confirm-password=.&dob=2022-12-14&remember=on HTTP/1.1" 200 1206

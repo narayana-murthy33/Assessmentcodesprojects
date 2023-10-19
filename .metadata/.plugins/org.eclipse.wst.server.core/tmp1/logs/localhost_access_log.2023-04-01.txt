@@ -1,0 +1,6 @@
+127.0.0.1 - - [01/Apr/2023:16:04:16 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [01/Apr/2023:16:04:17 +0530] "GET /SpringNoXMLWebApp/ HTTP/1.1" 200 264
+0:0:0:0:0:0:0:1 - - [01/Apr/2023:16:04:17 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [01/Apr/2023:16:04:22 +0530] "GET /SpringNoXMLWebApp/travels/signup HTTP/1.1" 200 1269
+0:0:0:0:0:0:0:1 - - [01/Apr/2023:16:04:38 +0530] "GET /SpringNoXMLWebApp/travels/create-user?email=nani&password=niii&confirm-password=iiii&dob=2023-03-28&remember=on HTTP/1.1" 200 1210
+0:0:0:0:0:0:0:1 - - [01/Apr/2023:16:04:51 +0530] "GET /SpringNoXMLWebApp/travels/book-travel?from_address=kk&to_address=kk&travel_date=2023-03-28&remember=on HTTP/1.1" 200 196

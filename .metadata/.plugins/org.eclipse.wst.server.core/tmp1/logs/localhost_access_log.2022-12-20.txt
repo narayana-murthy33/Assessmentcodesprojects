@@ -1,0 +1,8 @@
+127.0.0.1 - - [20/Dec/2022:12:46:57 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [20/Dec/2022:12:46:57 +0530] "GET /ABC/ HTTP/1.1" 404 759
+0:0:0:0:0:0:0:1 - - [20/Dec/2022:12:46:57 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [20/Dec/2022:12:47:03 +0530] "GET /ABC/yathra/hi HTTP/1.1" 200 303
+0:0:0:0:0:0:0:1 - - [20/Dec/2022:12:47:05 +0530] "GET /ABC/yathra/yathra/signup HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [20/Dec/2022:12:47:13 +0530] "GET /ABC/yathra//signup HTTP/1.1" 200 1269
+0:0:0:0:0:0:0:1 - - [20/Dec/2022:12:48:22 +0530] "GET /ABC/yathra//create-user?email=narayanamurthy5522%40gmail.com&password=nani12345&confirm-password=nani12345&dob=2022-12-07&remember=on HTTP/1.1" 200 1197
+0:0:0:0:0:0:0:1 - - [20/Dec/2022:12:48:31 +0530] "GET /ABC/yathra//book-travel?from_address=attili&to_address=banglore&travel_date=2022-12-01&remember=on HTTP/1.1" 200 188

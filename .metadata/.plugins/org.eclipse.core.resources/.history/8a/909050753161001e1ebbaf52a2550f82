@@ -1,0 +1,14 @@
+package com.Calculation;
+import java.util.*;
+public class Invent {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner (System.in);
+		System.out.println("Hii Swathi");
+		String a=sc.next();
+		System.out.println(a);
+		System.out.println("thank you,");
+		System.out.println("murthy.");
+		
+	}
+
+}

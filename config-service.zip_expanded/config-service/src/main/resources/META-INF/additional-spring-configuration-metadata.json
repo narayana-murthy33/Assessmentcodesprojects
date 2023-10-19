@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "config-service.userName",
+    "type": "java.lang.String",
+    "description": "A description for 'config-service.userName'"
+  },
+  {
+    "name": "config-service.password",
+    "type": "java.lang.String",
+    "description": "A description for 'config-service.password'"
+  }
+]}

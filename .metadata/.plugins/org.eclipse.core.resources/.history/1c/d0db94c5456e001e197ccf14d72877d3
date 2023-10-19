@@ -1,0 +1,12 @@
+package com.Codevandana;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class RomanToInteger {
+    public static void main(String[] args) {
+        String romanNumeral = "IX";
+       // int integerValue = romanToInteger(romanNumeral);
+       // System.out.println("Integer value: " + integerValue);
+    }
+   

@@ -1,0 +1,6 @@
+127.0.0.1 - - [28/Dec/2022:17:10:27 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [28/Dec/2022:17:10:27 +0530] "GET /NoXMLwebapplication/ HTTP/1.1" 200 301
+0:0:0:0:0:0:0:1 - - [28/Dec/2022:17:10:28 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [28/Dec/2022:17:10:30 +0530] "GET /NoXMLwebapplication/yathra/signup HTTP/1.1" 200 1269
+0:0:0:0:0:0:0:1 - - [28/Dec/2022:17:10:46 +0530] "GET /NoXMLwebapplication/yathra/create-user?email=s&password=2&confirm-password=h&dob=2022-12-14&remember=on HTTP/1.1" 200 1206
+0:0:0:0:0:0:0:1 - - [28/Dec/2022:17:10:57 +0530] "GET /NoXMLwebapplication/yathra/book-travel?from_address=attili&to_address=banglore&travel_date=2022-12-08&remember=on HTTP/1.1" 200 188

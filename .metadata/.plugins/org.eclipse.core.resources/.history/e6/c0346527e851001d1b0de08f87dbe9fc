@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+
+public class Arraylistdemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       ArrayList a=new ArrayList();
+       a.add(100);
+       a.add(200);
+       a.add("nani");
+       System.out.println(a);
+       System.out.println(a.indexOf(100));
+       System.out.println(a.size());
+       System.out.println(a.contains(200));
+	}
+
+}
